@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desktop Pet</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Desktop Pet</h1>
+      <p class="subtitle">Upload one pet image to start the MVP demo.</p>
+
+      <label for="pet-upload" class="upload">Select image</label>
+      <input id="pet-upload" type="file" accept="image/png,image/jpeg,image/webp" />
+
+      <div id="preview" class="preview">No image selected</div>
+
+      <div class="actions">
+        <button id="show-pet" disabled>Show pet</button>
+        <button id="hide-pet">Hide pet</button>
+      </div>
+
+      <p id="status" class="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
